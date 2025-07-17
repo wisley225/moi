@@ -26,29 +26,20 @@ function App() {
  
 
 
-  return (
-  
- <>
-     <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/SignIn" element={<SignIn onSendUsersId={recuIdUser} />}  />       
-        <Route path="/Shop" element={<Shop usersid={usersId}  />}/>
-        <Route path="/Profil" element={<Profil />}/>       
-        <Route path="/PasswordForget" element={<PasswordForget/>}/>       
-        <Route path="/ModifPassword" element={< ModifPassword/>}/>       
-        <Route path="/Commande" element={< Commande/>}/>       
-        <Route path="/Panier" element={<Panier/>}/> 
-              
-           
-      </Routes>
- 
- </>
-      
-
-
-
-
-  );
+  return(
+<>
+<Routes>
+<Route path="/" element={<Home />}/>
+<Route path="/SignIn" element={<SignIn onSendUsersId={recuIdUser} />}  />       
+<Route path="/Shop" element={<Shop usersid={usersId}  />}/>
+<Route path="/Profil" element={<Profil />}/>       
+<Route path="/PasswordForget" element={<PasswordForget/>}/>       
+<Route path="/ModifPassword" element={< ModifPassword/>}/>       
+<Route path="/Commande" element={< Commande/>}/>       
+<Route path="/Panier" element={<Panier/>}/>       
+</Routes>
+</>
+ );
 }
 
 export default App;

@@ -51,7 +51,7 @@ setchargement(true)
 
 
 useEffect(() => {
-  console.log(products);
+  
   const endOffset = itemsOffset + itemsPerPage;
   setCurrentItems(products.slice(itemsOffset, endOffset));
   setPageCount(Math.ceil(products.length / itemsPerPage));
@@ -108,7 +108,6 @@ const BarSearch=async(recherche)=>{
 const notifPanier=(panierLength)=>{
 
   setPanierLength(panierLength)
-  console.log(panierLength)
 
 }
 
